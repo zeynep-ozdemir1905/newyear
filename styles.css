@@ -1,0 +1,56 @@
+body {
+    background-color: pink
+}
+body{
+    width: 600px;
+    margin: 0 auto;
+    font-family: 'Times New Roman'
+}
+
+header, footer {
+    text-align: center; 
+    background-color: lightyellow;
+}
+header {
+    color: lightblue;
+    line-height: 80px;
+}
+h1{
+    display: inline;
+    color: yellow;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    border-bottom:2px solid #7b7b7b;
+    color: burlywood
+}
+h3 {
+    display: inline;
+    color: #E5AF42;
+    text-align: center;
+}
+.fake-button {
+    background-color: #E5AF42;
+    text-align: center;
+    line-height: 3;
+    border: 1px solid black;
+    cursor: pointer;
+    text-decoration: none;
+    width: 50px
+  }
+  .fake-button:hover, .blue-hover:hover {
+    text-decoration: none;
+    background-color: #4278e5; 
+    color: white;
+    cursor: pointer;
+    margin-right: 40px;
+  }
+footer {
+    font-style: italic;
+    padding: 10px;
+}
+img {
+    width:400px;
+}
+ 
