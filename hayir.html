@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: lightcoral
+        }
+        h1 {
+            font-size: 3rem; /* Bigger size */
+            text-align: center; /* Optional */
+        }
+        p {
+    font-size: 1.5rem; /* Adjust size as needed */
+    line-height: 1.6; /* Optional: add spacing between lines */
+    text-align: center; /* Optional: center the text */
+}
+img{
+    width: 400px
+}
+    </style>
+    <title>Uzücü Cevap</title>
+</head>
+<body>
+    <h1>NE DEMEK GELMIYORUM</h1>
+    <p>
+        Bizimle değilsin 😢😢😢
+        <img src="../images/bayilmak.jpg">
+    </p>
+
+    <script>
+        // Function to create emoji rain
+        function createEmojiRain() {
+            const emoji = '😢'; // Crying face emoji
+
+            setInterval(() => {
+                const span = document.createElement('span');
+                span.style.position = 'absolute';
+                span.style.fontSize = '2rem'; // Emoji size
+                span.style.top = '-50px';
+                span.textContent = emoji;
+
+                // Random horizontal position
+                span.style.left = Math.random() * 100 + 'vw';
+
+                // Random animation duration
+                const duration = Math.random() * 3 + 2 + 's';
+                span.style.animation = `fall ${duration} linear`;
+
+                // Append emoji to the body
+                document.body.appendChild(span);
+
+                // Remove the emoji after animation ends
+                setTimeout(() => {
+                    span.remove();
+                }, 5000);
+            }, 200); // Creates a new emoji every 200ms
+
+            // Define the animation keyframes
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes fall {
+                    from {
+                        transform: translateY(-100px);
+                        opacity: 1;
+                    }
+                    to {
+                        transform: translateY(100vh);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+
+        // Start emoji rain when the page loads
+        window.onload = createEmojiRain;
+    </script>
