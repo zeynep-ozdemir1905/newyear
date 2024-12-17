@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neymar Ben Varım Diyor Ben</title>
+    <img src="../images/dans.jpg">
+    <style>
+        body{
+            background-color: palegoldenrod
+        }
+        h1 {
+            font-size: 3rem; /* Bigger size */
+            text-align: center; /* Optional */
+        }
+        p {
+    font-size: 1.5rem; /* Adjust size as needed */
+    line-height: 1.6; /* Optional: add spacing between lines */
+    text-align: center; /* Optional: center the text */
+}
+img { width: 400px}
+    </style>
+</head>
+<body>
+    <h1>Harikasinnnnn</h1>
+    <p>EĞLENCEYE VARIM DİYORSUN, SANA BAYILDIM AŞKIM</p>
+
+    <!-- Include Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+    <!-- JavaScript for Confetti (Inline) -->
+    <script>
+        window.onload = function() {
+            confetti({
+                particleCount: 1000,
+                spread: 100,  // Spread angle
+                startVelocity: 40,  // Speed of confetti
+                origin: { y: 0.6 }  // Confetti start position
+            });
+        };
+    </script>
+</body>
+</html>
 
